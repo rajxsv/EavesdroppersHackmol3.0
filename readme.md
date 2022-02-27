@@ -82,4 +82,4 @@ Presentation Link
 ---
 Video link
 
-- https://www.loom.com/share/26686c899a0d4b4fb318720a4cf0dd3b
+- https://www.youtube.com/watch?v=DAifY8rmf20
