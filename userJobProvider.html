@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="userJobProvider.css" />
+  </head>
+  <body>
+    <div class="form_wrapper">
+      <div class="form_container">
+        <div class="title_container">
+          <h2>Job Posting</h2>
+        </div>
+        <div class="row clearfix">
+          <div class="">
+            <form class="jobPostForm" action="">
+              <div class="input_field">
+                <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                <input
+                  type="text"
+                  name="jobType"
+                  placeholder="Job Type"
+                  required
+                />
+              </div>
+              <div class="input_field" style="width: 100%">
+                <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                <input type="date" name="date" placeholder="Date" required />
+              </div>
+              <!-- <div class="input_field">
+                <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Re-type Password"
+                  required
+                />
+              </div> -->
+              <!-- <div class="row clearfix">
+                <div class="col_half">
+                  <div class="input_field">
+                    <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                    <input
+                      type="text"
+                      name="firstName"
+                      placeholder="First Name"
+                    />
+                  </div>
+                </div>
+                <div class="col_half">
+                  <div class="input_field">
+                    <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                    <input
+                      type="text"
+                      name="lastName"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="input_field radio_option">
+                <input type="radio" name="gender" id="male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Female</label>
+              </div> -->
+              <div class="input_field select_option">
+                <textarea
+                  name="place"
+                  cols="30"
+                  rows="10"
+                  placeholder="Address"
+                ></textarea>
+              </div>
+              <div class="input_field checkbox_option">
+                <input
+                  type="number"
+                  name="payPerHour"
+                  placeholder="Pay Per Hour"
+                  required
+                />
+              </div>
+              <div class="input_field">
+                <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                <input
+                  type="tel"
+                  name="mobileNumber"
+                  placeholder="Mobile Number"
+                  required
+                />
+              </div>
+              <div class="input_field">
+                <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                <input
+                  type="number"
+                  name="peopleNeeded"
+                  placeholder="Number of People Required"
+                  required
+                />
+              </div>
+              <!-- <div class="input_field checkbox_option">
+                <input type="checkbox" id="cb2" />
+                <label for="cb2">I want to receive the newsletter</label>
+              </div> -->
+              <input class="button" type="submit" value="Post" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="userJobProvider.bundle.js"></script>
+  </body>
+</html>
+
+<!-- style="padding-left: 2rem; width: 100%; box-sizing: border-box;" -->

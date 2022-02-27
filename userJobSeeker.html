@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job List</title>
+    <link rel="icon" type="image/x-icon" href="logo_big_favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <script
+      src="https://kit.fontawesome.com/1935edc4c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      /* *{
+          font-family: 'Times New Roman', Times, serif;
+        } */
+      .sidenav a {
+        padding: 6px 6px 6px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      /* body{
+          background-image: url('head.jpg');
+          background-repeat: no-repeat;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+        } */
+      h1 {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: "Times New Roman", Times, serif;
+        margin-bottom: 3rem;
+      }
+      /* html{
+          background-image: url('head.jpg');
+          background-repeat: no-repeat;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+        } */
+      table {
+        width: 100%;
+        table-layout: fixed;
+      }
+
+      .tbl-header {
+        background-color: none;
+      }
+
+      .tbl-content {
+        height: 300px;
+        overflow-x: auto;
+        margin-top: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      th {
+        padding: 20px 15px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        vertical-align: middle;
+      }
+
+      td {
+        padding: 15px;
+        text-align: left;
+        vertical-align: middle;
+        font-weight: 300;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+        font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+          sans-serif;
+        font-weight: bolder;
+      }
+
+      tr:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        border: 2px solid rgb(0, 0, 0);
+      }
+
+      p {
+        left: 85%;
+        margin-top: 40px;
+        padding: 5px;
+        clear: left;
+        text-align: right;
+        margin-right: 15%;
+        font-size: 12px;
+        font-family: arial;
+        color: rgb(255, 255, 255);
+      }
+      h2 {
+        margin-top: 40px;
+        padding: 5px;
+        clear: left;
+        text-align: right;
+        margin-right: 2rem;
+        font-size: 15px;
+        font-family: arial;
+        color: rgb(255, 251, 251);
+      }
+
+      #myInput {
+        background-image: url("/css/searchicon.png");
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+        margin-bottom: 2rem;
+      }
+
+      .button {
+        background-color: #4caf50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        background-color: #ff914d;
+        font-size: 1.2rem;
+        color: #ffffff;
+        border-radius: 20px;
+      }
+
+      /* body {
+          background-image: url('image.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        } */
+      .button2:hover {
+        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(253, 253, 253),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+      body {
+        /* background: -webkit-linear-gradient(left, #3cbb86, #25b7c4);
+        background: linear-gradient(#dda34c, #64bb32, #25b7c4, #f1f1f1); */
+        background-image: url("two.jpg");
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        font-family: "Roboto", sans-serif;
+      }
+      section {
+        margin: 50px;
+      }
+    </style>
+    -->
+  </head>
+  <body style="font-family: 'Roboto', sans-serif">
+    <script>
+      $(window)
+        .on("load resize ", function () {
+          var scrollWidth =
+            $(".tbl-content").width() - $(".tbl-content table").width();
+          $(".tbl-header").css({ "padding-right": scrollWidth });
+        })
+        .resize();
+    </script>
+    
+    <!-- <h2>Currently 5000 persons can apply for job.....</h2>
+    <div class="sidenav" style="overflow-x:auto; overflow-y: auto;">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div> -->
+    <h2>Currently 2000 jobs are avaliable....</h2>
+    <section>
+      <h1
+        class="display-1"
+        style="
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+        "
+      >
+        List of Jobs
+      </h1>
+
+      <div class="tbl-header">
+        <div style="margin-bottom: 1rem;">
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"></div>
+          <table cellpadding="0" cellspacing="0" border="0" style="margin-top: 1rem;">
+          <thead>
+            <tr class="heading">
+              <th>Job</th>
+              <th>Place</th>
+              <th>Pay</th>
+              <th>Phone Number</th>
+              <th>Apply Here</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody id="tbody1">
+            
+          </tbody>
+        </table>
+        <script>
+          function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+                } else {
+                  tr[i].style.display = "none";
+                }
+              }       
+            }
+          }
+          </script>
+      </div>
+    </section>
+    <p>Scroll down</p>
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><a href="mailto:rozgaarbharat69@gmail.com">Contact Us</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+              <li class="list-inline-item">⋅</li>
+              <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">
+              &copy; Your Website 2022. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item me-4">
+                <a href="https://www.facebook.com/rozgaarbharat22/"><i class="bi-facebook fs-3"></i></a>
+              </li>
+              <li class="list-inline-item me-4">
+                <a href="https://twitter.com/RozgaarBharat"
+                  ><i class="bi-twitter fs-3"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/rozgaar_bharat/"
+                  ><i class="bi-instagram fs-3"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="userJobSeeker.bundle.js"></script>
+  </body>
+</html>
