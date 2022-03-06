@@ -16,7 +16,7 @@
  # Team details
 - Team Name : Eavesdroppers
 - IsFresher: True
-- Members (Rajpreet Singh(Leader) , Gauravdeep Singh , Garv Arora , Shriram , Om Dhawan)
+- Members (Rajpreet Singh , Gauravdeep Singh , Garv Arora , Shriram , Om Dhawan)
 - Team Code : 6dcc7af0e5
 - Great Team!
 
