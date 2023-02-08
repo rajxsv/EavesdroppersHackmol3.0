@@ -45,38 +45,6 @@ We aim at building a one to one system where one person will be able to accompli
 https://rajxsv.github.io/Eavesdroppers_hackmol3.0/
 
 ---
-
-### Images
-
-![image](https://www.linkpicture.com/q/1_1096.png)
-
-![image](https://www.linkpicture.com/q/2_1449.png)
-
-![image](https://www.linkpicture.com/q/3_893.png)
-
-![image](https://www.linkpicture.com/q/4_642.png)
-
-![image](https://www.linkpicture.com/q/5_546.png)
-
-![image](https://www.linkpicture.com/q/6_371.png)
-
-![image](https://www.linkpicture.com/q/7_270.png)
-
-![image](https://www.linkpicture.com/q/8_221.png)
-
-![image](https://www.linkpicture.com/q/9_189.png)
-
-![image](https://www.linkpicture.com/q/10_158.png)
-
-![image](https://www.linkpicture.com/q/11_151.png)
-
-![image](https://www.linkpicture.com/q/a1_4.jpeg)
-
-![image](https://www.linkpicture.com/q/a2_7.jpeg)
-
-![image](https://www.linkpicture.com/q/a3_4.jpeg)
-
----
 Presentation Link
 
 - https://docs.google.com/presentation/d/1HiCixaObk_BS1jL_cMstEBIbaQm2jTxu/edit?usp=sharing&ouid=108068589117068635242&rtpof=true&sd=true
